@@ -1,0 +1,40 @@
+<?php 
+
+require "carstd/hard.php";
+require "carstd/motor.php";
+require "carstd/soft.php";
+require "bmw.php";
+require "nissan.php";
+require "fiat.php";
+require "cheverolet.php";
+
+$fiat = new fiat();
+$fiat->os();
+echo "<br>";
+$fiat->body();
+echo "<br>";
+$fiat->r();
+echo "<br>";
+echo "<hr>";
+$bmw = new bmw();
+$bmw->os();
+echo "<br>";
+$bmw->body();
+echo "<br>";
+$bmw->r();
+echo "<hr>";
+$nissan = new nissan();
+$nissan->os();
+echo "<br>";
+$nissan->body();
+echo "<br>";
+$nissan->r();
+echo "<br>";
+nissan::hello();
+echo "<hr>";
+$cheverolet = new chaverolet();
+$cheverolet->os();
+echo "<br>";
+$cheverolet->body();
+echo "<br>";
+$cheverolet->r();
